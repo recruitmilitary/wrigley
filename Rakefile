@@ -5,13 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "wrigley"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "mguterl@gmail.com"
-    gem.homepage = "http://github.com/mguterl/wrigley"
+    gem.summary = %Q{Used for retrieving jobs from Wrigley's website}
+    gem.description = %Q{Used for retrieving jobs from Wrigley's website}
+    gem.email = "michael@recruitmilitary.com"
+    gem.homepage = "http://github.com/recruitmilitary/wrigley"
     gem.authors = ["Michael Guterl"]
+    gem.add_dependency "nokogiri", ">= 1.4.0"
+    gem.add_development_dependency "fakeweb", ">= 1.2.8"
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
