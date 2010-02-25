@@ -24,7 +24,7 @@ module Wrigley
         title = tds[1].text.strip
         location = tds[2].text.strip
         posted_date = Date.parse(tds[3].text.strip)
-        link = tds[1].at("a")["href"]
+        link = tds[1].at("a")["href"].gsub(/;jsessionid=.*$/, '')
         jobs << Job.new(id, title, location, posted_date, link)
       end
       jobs.push(*parse(next_page_uri, next_page_number)) if current_page_number < next_page_number
