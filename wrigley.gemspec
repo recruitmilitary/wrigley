@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wrigley}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Guterl"]
-  s.date = %q{2009-12-29}
+  s.date = %q{2010-02-25}
   s.description = %q{Used for retrieving jobs from Wrigley's website}
   s.email = %q{michael@recruitmilitary.com}
   s.extra_rdoc_files = [
@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
      "spec/fixtures/search_p3.html",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/wrigley_spec.rb"
+     "spec/wrigley_spec.rb",
+     "wrigley.gemspec"
   ]
   s.homepage = %q{http://github.com/recruitmilitary/wrigley}
   s.rdoc_options = ["--charset=UTF-8"]
